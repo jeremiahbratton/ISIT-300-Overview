@@ -5,36 +5,34 @@ We have covered a lot of topcis in this course, it would be easy to forget all o
 A tagged markup up language used to describe the document structure. This course covered the basics of what HTML is capable of and there is plenty more to explore. To keep learning more about HTML the MDN docs are an excellent source for seeing what is available. 
 
 ### Formatting Tags
-- <strong> - Bold text
-- <em> - Italic text
-- <u> - Underlined text
-- <s> - Strikethrough text
-- <sup> - Superscript text
-- <sub> - Subscript text
-- <code> - Code text
-- <pre> - Pre-formatted text
-- <blockquote> - Blockquote text
-- <q> - Short inline quotation
+* `<strong>` - Bold text
+* `<em>` - Italic text
+* `<sup>` - Superscript text
+* `<sub>` - Subscript text
+* `<code>` - Code text
+* `<pre>` - Pre-formatted text
+* `<blockquote>` - Blockquote text
+* `<q>` - Short inline quotation
 
 ### Sections and Layout tags
-- <header> - Header section
-- <footer> - Footer section
-- <article> - Article section
-- <section> - Section section
-- <nav> - Navigation section
-- <aside> - Aside section
-- <main> - Main section
-- <figure> - Figure section
-- <figcaption> - Figure caption
-- <details> - Details section
-- <summary> - Summary section
+* `<header>` - Header section
+* `<footer>` - Footer section
+* `<article>` - Article section
+* `<section>` - Section section
+* `<nav>` - Navigation section
+* `<aside>` - Aside section
+* `<main>` - Main section
+* `<figure>` - Figure section
+* `<figcaption>` - Figure caption
+* `<details>` - Details section
+* `<summary>` - Summary section
 
 ### Forms
 Forms allow users to input and submit data to a web application. They are essential for user interaction on websites.
 
-- `<form>` - Container element that wraps form inputs and defines where data should be sent
-- `<input>` - Creates various input fields (text, email, password, checkbox, radio, etc.)
-- `<select>` - Creates a dropdown menu for selecting from multiple options
+* `<form>` - Container element that wraps form inputs and defines where data should be sent
+* `<input>` - Creates various input fields (text, email, password, checkbox, radio, etc.)
+* `<select>` - Creates a dropdown menu for selecting from multiple options
 
 **Example:**
 ```html
@@ -50,8 +48,8 @@ Forms allow users to input and submit data to a web application. They are essent
 ```
 
 ### CSS and JS
-- <style> - Sets up a style block
-- <script> - sets up a script block
+* `<style>` - Sets up a style block
+* `<script>` - sets up a script block
 
 ### The DOM 
 DOM stands for document object model. It holds the node tree for the document. When adding HTML tags or using Javascript to make changes you work with the DOM and its apis. 
@@ -60,23 +58,23 @@ DOM stands for document object model. It holds the node tree for the document. W
 We lightly touched on CSS in this course. However, there are some important concepts to remember. If you would like to continue to learning more about CSS. the MDN docs are an excellent place to look up properties and try something out.
 
 ### Selectors
-- Type selector - Selects all elements of the given type
-- Class selector - Selects all elements with the given class
-- ID selector - Selects all elements with the given ID
-- Attribute selector - Selects all elements with the given attribute
-- Pseudo-class selector - Selects all elements that match the pseudo-class
-- Pseudo-element selector - Selects a part of the selected element
+* Type selector - Selects all elements of the given type
+* Class selector - Selects all elements with the given class
+* ID selector - Selects all elements with the given ID
+* Attribute selector - Selects all elements with the given attribute
+* Pseudo-class selector - Selects all elements that match the pseudo-class
+* Pseudo-element selector - Selects a part of the selected element
 
 ### Properties
 CSS properties control the visual appearance and layout of HTML elements.
 
-- **Color** - Sets the text color (e.g., `color: blue;` or `color: #FF0000;`)
-- **Background color** - Sets the background color of an element (e.g., `background-color: yellow;`)
-- **Font** - Controls text appearance including family, size, weight (e.g., `font-family: Arial; font-size: 16px;`)
-- **Display** - Controls how elements are displayed (`block`, `inline`, `flex`, `grid`, `none`)
-- **Position** - Controls element positioning (`static`, `relative`, `absolute`, `fixed`, `sticky`)
-- **Padding** - Space inside an element, between content and border (e.g., `padding: 10px;`)
-- **Margin** - Space outside an element, between elements (e.g., `margin: 20px;`)
+* **Color** - Sets the text color (e.g., `color: blue;` or `color: #FF0000;`)
+* **Background color** - Sets the background color of an element (e.g., `background-color: yellow;`)
+* **Font** - Controls text appearance including family, size, weight (e.g., `font-family: Arial; font-size: 16px;`)
+* **Display** - Controls how elements are displayed (`block`, `inline`, `flex`, `grid`, `none`)
+* **Position** - Controls element positioning (`static`, `relative`, `absolute`, `fixed`, `sticky`)
+* **Padding** - Space inside an element, between content and border (e.g., `padding: 10px;`)
+* **Margin** - Space outside an element, between elements (e.g., `margin: 20px;`)
 
 **Example:**
 ```css
@@ -97,26 +95,109 @@ External documents can be linked within HTML. This allows you to break apart you
 
 **Common linking methods:**
 
-- **CSS Files** - Link external stylesheets in the `<head>` section:
+* **CSS Files** - Link external stylesheets in the `<head>` section:
 ```html
 <link rel="stylesheet" href="styles.css">
 ```
 
-- **JavaScript Files** - Link external scripts, typically before closing `</body>`:
+* **JavaScript Files** - Link external scripts, typically before closing `</body>`:
 ```html
 <script src="script.js"></script>
 ```
 
-- **Images** - Reference images from external sources:
+* **Images** - Reference images from external sources:
 ```html
 <img src="image.jpg" alt="Description">
 ```
 
-- **Hyperlinks** - Link to other pages or external resources:
+* **Hyperlinks** - Link to other pages or external resources:
 ```html
 <a href="page.html">Link Text</a>
 <a href="https://example.com">External Link</a>
 ```
+
+## Version Control
+While not strictly a web technology git's influence cannot be understated when it comes to the web. Anytime you work on something it is useful to add a repository, working with teams and CI/CD structures it is vital. 
+
+### Git
+
+Git is a distributed version control system designed to help users track changes in their code, collaborate with others, and manage different versions of a project over time. It's essential for teamwork, backup, and understanding the history of your codebase.
+
+#### What is GitHub?
+GitHub is a web platform for hosting git repositories. It provides a graphical interface to your code, tools for sharing, reviewing, opening issues, managing pull requests, and collaborating with anyone worldwide.
+
+#### Initializing a Repository
+Create a new git repository in your project folder:
+```bash
+git init
+```
+
+#### Cloning a Repository
+Download a remote repository (such as from GitHub):
+```bash
+git clone https://github.com/username/repository.git
+```
+
+#### Checking Status
+Display modified, added, or deleted files:
+```bash
+git status
+```
+
+#### Adding Files
+Stage file(s) for commit:
+```bash
+git add filename.txt # Add a single file
+git add .            # Add all files & folders
+```
+
+#### Commiting
+Save a snapshot of staged changes:
+```bash
+git commit -m "Your commit message here"
+```
+
+#### Branching
+Create and switch between branches to safely develop features:
+```bash
+git branch feature-xyz       # Create a new branch
+git checkout feature-xyz     # Switch to branch
+git checkout -b new-feature  # Create and switch in one step
+```
+
+#### Remotes
+Git remotes point to versions of your repository on GitHub or elsewhere.
+```bash
+git remote add origin https://github.com/yourname/repo.git
+```
+
+#### Push / Pull / Fetch
+To share/pull code with/from a remote:
+```bash
+git push origin main       # Upload your changes to main branch
+git pull origin main       # Get latest updates from main branch
+git fetch                 # Fetch changes (doesn’t merge)
+```
+
+#### Log and History
+See commit history:
+```bash
+git log
+```
+
+#### Merge & Resolve Conflicts
+To combine branches, use:
+```bash
+git merge branchname
+```
+If you see a merge conflict, open the files and edit as needed, then:
+```bash
+git add conflict-file.js
+git commit
+```
+
+### Github
+GitHub hosts git repositories in the cloud and provides tools for: code review, issue tracking, and teamwork. Create an account, push your repo, and collaborate with the world—all using git and the above commands.
 
 ## Javascript
 Javascript is a vast subject and in many way a primary character in the world of development / engineering. There is far more to learn than could be covered in a single class.
@@ -574,6 +655,9 @@ A jailed process is a containerized application that runs in isolation from the 
 #### Name Spacing
 Namespacing in Docker isolates container resources (processes, network interfaces, file systems) so containers can't see or interfere with each other. Each container has its own namespace, even though they share the same host operating system.
 
+#### Resource Control Groups
+Resource control groups (cgroups) are a Linux kernel feature used by Docker (and other container systems) to limit, account for, and isolate the resource usage (CPU, memory, disk I/O, etc.) of a group of processes. In containers, cgroups ensure that each container only uses its allocated resources and cannot starve the host or other containers, helping to maintain stable and efficient system operation.
+
 ### Docker Compose
 Docker Compose is a tool for defining and running multi-container Docker applications. Instead of running multiple `docker run` commands, you define all services in a YAML file and start everything with one command.
 
@@ -602,6 +686,10 @@ We lightly touched on Kubernetes in this course to show what the next level of h
 
 ## NodeJS
 Node.js is a JavaScript runtime that allows you to run JavaScript on the server (outside the browser). It's built on Chrome's V8 JavaScript engine and enables building full-stack web applications using JavaScript for both frontend and backend.
+
+### NPM
+NPM (Node Package Manager) is the default package manager for Node.js. It allows developers to easily install, manage, and share JavaScript libraries and tools from the npm registry. With NPM, you can add dependencies to your project, run scripts, and manage your project's configuration using the `package.json` file.
+
 
 ### Express
 Express is a minimal and flexible web application framework for Node.js. It simplifies building web servers and APIs by providing tools for routing, handling requests, and managing middleware.
